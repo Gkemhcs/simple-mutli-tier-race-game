@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="leaderboard.css">
+    <title>Car with Care Leaderboard</title>
+</head>
+
+<body>
+    <div class="container">
+   
+        <h1 class="title">Car with Care</h1>
+        
+        <div class="leaderboard">
+            <%  data.forEach((element)=>{ %>
+
+         
+                <div class="leaderboard-item">
+                    <span class="username"><%= element.username %></span>
+                    <span class="points"><%= element.points_scored %></span>
+                </div>
+    
+           <%    }) %> 
+           
+           
+            <button class="login-button"><a href="/login">Login</a></button>
+            <button class="play-button"><a href="/play">Play</a></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
